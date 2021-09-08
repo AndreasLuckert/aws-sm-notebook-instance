@@ -1,0 +1,2 @@
+# aws-sm-notebook-instance
+SageMaker notebook lifecycle configuration: the lifecycle configuration consists of two shell scripts that you can populate with whatever you like. The first shell script is the on-create.sh script, which performs its actions when the SageMaker notebook instance is being created for the very first time. The second shell script is the on-start.sh script, which is executed every time the SageMaker instance is started up from a “stopped” state.
