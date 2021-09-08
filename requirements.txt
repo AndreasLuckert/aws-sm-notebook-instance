@@ -1,2 +1,0 @@
-catboost==0.25.1
-pyathena==2.2.0
