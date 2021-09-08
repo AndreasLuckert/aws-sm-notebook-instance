@@ -1,0 +1,50 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                "sagemaker:CreateCodeRepository"
+            ],
+            "Resource": [
+                "arn:aws:sagemaker:eu-central-1:543803411794:code-repository/aws-sm-notebook-instance-repo"
+            ]
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "sagemaker:CreateNotebookInstanceLifecycleConfig"
+            ],
+            "Resource": [
+                "arn:aws:sagemaker:eu-central-1:543803411794:notebook-instance-lifecycle-config/dev-platform-al-sm-lifecycle-config"
+            ]
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "sagemaker:UpdateNotebookInstanceLifecycleConfig"
+            ],
+            "Resource": [
+                "arn:aws:sagemaker:eu-central-1:543803411794:notebook-instance-lifecycle-config/dev-platform-al-sm-lifecycle-config"
+            ]
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "sagemaker:CreateNotebookInstance"
+            ],
+            "Resource": [
+                "arn:aws:sagemaker:eu-central-1:543803411794:notebook-instance/aws-sm-notebook-instance"
+            ]
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "sagemaker:DeleteNotebookInstance"
+            ],
+            "Resource": [
+                "arn:aws:sagemaker:eu-central-1:543803411794:notebook-instance/aws-sm-notebook-instance"
+            ]
+        }
+    ]
+}
