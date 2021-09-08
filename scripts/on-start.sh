@@ -6,7 +6,10 @@ set -e
 ## ----------------------------------------------------------------
 
 # Setting the timeout (in seconds) for how long the SageMaker notebook can run idly before being auto-stopped
-IDLE_TIME=300
+# 1800 s = 30 min since first deployment can take between 15 and 20 minutes which could then fail like so:
+# "Error: error waiting for sagemaker notebook instance (aws-sm-notebook-instance) to create: unexpected state 'Failed', wanted target 'InService'. last error: %!s(<nil>)"
+# Hint for solution under following link: https://yuyasugano.medium.com/machine-learning-infrastructure-terraforming-sagemaker-part-2-f2460a9a4663
+IDLE_TIME=1800
 
 # Getting the autostop.py script from GitHub
 echo "Fetching the autostop script..."
